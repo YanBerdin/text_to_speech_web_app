@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Text_To_Speech_API</title>
+  </head>
+  <body>
+    <h1>Audio API Text to Speech</h1>
+
+    <form class="form">
+      <!--<p class="label">Text to read :</p>-->
+      <label for="text-input">Text to read:</label>
+      <input
+        type="text"
+        id="text-input"
+        value="Bienvenue, saisissez le texte que je dois ennoncer. Attention ! les accents sont parfois mal interprétés !"
+        class="txt"
+      />
+      <!--<p class="label">Voice :</p> -->
+      <label for="name">Voice:</label>
+      <select name="name" id="" title="Voice"></select>
+      <!--<p class="label">Pitch :</p>-->
+      <label for="pitch">Pitch:</label>
+      <input type="text" value="0" id="pitch" />
+      <!--<p class="label">Rate :</p>-->
+      <label for="rate">Rate:</label>
+      <input type="text" value="1" id="rate" />
+
+      <button type="submit">Speak</button>
+    </form>
+    <!--
+    Taken from
+    <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis"
+      >https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis</a
+    >
+    -->
+  </body>
+</html>

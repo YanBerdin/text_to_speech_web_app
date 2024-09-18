@@ -1,0 +1,35 @@
+body {
+  font-family: "PT Sans", sans-serif;
+  background: linear-gradient(to bottom, #000080, #1790db);
+  min-height: 100vh;
+  color: orange;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+select,
+button {
+  display: block;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1rem;
+  border: 1px solid #607d8b;
+  background: white;
+  -webkit-apperance: none;
+}
+
+.label {
+  font-weight: 700;
+  color: orange;
+}
