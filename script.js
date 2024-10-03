@@ -79,8 +79,17 @@ if (speechSynthesis.onvoiceschanged !== undefined) {
 inputForm.onsubmit = (event) => {
   event.preventDefault();
 
+  // Validation des entrées
+  if (inputTxt.value.trim() === "") {
+    alert("Veuillez entrer un texte à lire.");
+    return;
+  }
+
+  // Assainir le texte saisi
+  const sanitizedText = DOMPurify.sanitize(inputTxt.value);
+
   // Crée une instance de SpeechSynthesisUtterance qui contient le texte à lire .
-  const utterThis = new SpeechSynthesisUtterance(inputTxt.value);
+  const utterThis = new SpeechSynthesisUtterance(sanitizedText);
   //  récupère la voix sélectionnée dans la liste déroulante.
   const selectedOption =
     voiceSelect.selectedOptions[0].getAttribute("data-name");
