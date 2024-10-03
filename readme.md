@@ -16,10 +16,10 @@ Convertisseur de texte en synthèse vocale !
 
 ## **Installation**
 
-1 Clonez le dépôt :
+1 Clonez le dépôt (SSH):
 
    ```bash
-   git clone https://github.com/votre-utilisateur/votre-projet.git
+   git clone git@github.com:YanBerdin/text_to_speech_web_app.git
    ```
 
 2 Ouvrez le fichier `index.html` dans votre navigateur :
@@ -63,4 +63,8 @@ Convertisseur de texte en synthèse vocale !
 
 ## **Résultat Obtenu**
 
-L'application permet aux utilisateurs de convertir du texte en parole de manière intuitive et personnalisée. Elle offre une interface utilisateur simple et des options de personnalisation pour la voix, le pitch et la vitesse, tout en étant compatible avec plusieurs navigateurs et langues. Les mesures de sécurité mises en place assurent une utilisation sécurisée de l'application, protégeant les utilisateurs contre les attaques potentielles.
+L'application permet aux utilisateurs de convertir du texte en parole de manière intuitive et personnalisée. Elle offre une interface utilisateur simple et des options de personnalisation pour la voix, le pitch et la vitesse, tout en étant compatible avec plusieurs navigateurs et langues.
+
+## **En-têtes de Sécurité**
+
+Il est recommandé d'utiliser des security-headers comme `Content-Security-Policy`, `X-Content-Type-Options`, `X-Frame-Options`, et `Strict-Transport-Security` dans la configuration de votre serveur web pour renforcer la sécurité de l'application.
